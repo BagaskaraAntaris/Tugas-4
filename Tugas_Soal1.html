@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.6.0.js">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// untuk meringkas class menjadi 1 class
+			// agar menghemat baris
+			$("#foto1").addClass("foto");
+			$("#foto2").addClass("foto");
+			$("#foto3").addClass("foto");
+
+			//Dibawah ini adalah perintah untuk 
+			//menampilkan dan menyembunyikan gambar
+			$(".sembunyi1").click(function(){
+				$("#foto1").hide("slow")
+			});
+			$(".tampil1").click(function(){
+				$("#foto1").show("slow")
+			});
+			$(".sembunyi2").click(function(){
+				$("#foto2").hide("slow")
+			});
+			$(".tampil2").click(function(){
+				$("#foto2").show("slow")
+			});
+			$(".sembunyi3").click(function(){
+				$("#foto3").hide("slow")
+			});
+			$(".tampil3").click(function(){
+				$("#foto3").show("slow")
+			});
+		});
+	</script>
+	<style type="text/css">
+		/*dibawah ini digunakan untuk gambar agar tertata rapi atau
+		sama rata*/
+		.foto{
+			width: 300px;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<!-- Untuk Hide/Show Gambar 1 -->
+	<button class="sembunyi1">sembunyikan</button>
+	<button class="tampil1">tampilkan</button>
+	<p><img id="foto1" src="images/r6.jpg"></p>
+
+	<!-- Untuk Hide/Show Gambar 2 -->
+	<button class="sembunyi2">sembunyikan</button>
+	<button class="tampil2">tampilkan</button>
+	<p><img id="foto2" src="images/KucingKecil.jpg"></p>	
+
+	<!-- Untuk Hide/Show Gambar 3 -->
+	<button class="sembunyi3">sembunyikan</button>
+	<button class="tampil3">tampilkan</button>
+	<p><img id="foto3" src="images/KucingAstonot.jpg"></p>
+</body>
+</html>

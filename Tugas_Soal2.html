@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(document).ready(function(){
+				//Merubah warna merah pada kotak jika di klik 2X
+  				$("div").dblclick(function(){
+   					$(this).addClass("red");
+ 				 });
+			});
+			//Menjadikan beberapa class menjadi 1 class
+			//Agar Ringkas
+			$(".kotak1").addClass("kotak");
+			$(".kotak2").addClass("kotak");
+			$(".kotak3").addClass("kotak");
+		});
+	</script>
+	<style type="text/css">
+		/*Warna Default*/
+		.kotak{
+			background-color: yellow;
+			margin-right: 40px;
+			width: 200px;
+			height: 200px;
+			float: left;
+		}
+		/*warna ketika diklik 2X*/
+		.red{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<p>Klik 2X pada kotak warna untuk mengubah warna</p>
+	<div class="kotak"></div>
+	<div class="kotak1"></div>
+	<div class="kotak2"></div>
+	<div class="kotak3"></div>
+</body>
+</html>

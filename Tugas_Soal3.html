@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//Dibawah ini perintah untuk fadeout dengan tempo slow
+			$(".fadeout").click(function(){
+			    $(".Kotak").fadeOut("slow");
+		  	});
+		  	//Dibawah ini perintah untuk fadein dengan tempo slow
+			$(".fadein").click(function(){
+		  		$(".Kotak").fadeIn("slow");
+		  	});
+		  	//Dibawah ini perintah untuk fadeto dengan tempo slow dengan opacity 0.3
+		  	$(".fadeto").click(function(){
+		  		$(".Kotak").fadeTo("slow",0.3);
+		  	});
+		});
+	</script>
+	<style type="text/css">
+		/*warna kotak default*/
+		.Kotak{
+			background-color: yellow;
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Tugas 3</h1>
+	<h2>Fade</h2>
+	<div class="Kotak"></div> <br><br>
+	<!-- button untuk fade -->
+	<button class="fadeout">Fade Out</button>
+	<button class="fadein">Fade In</button>
+	<button class="fadeto">Fade To</button>
+</body>
+</html>
